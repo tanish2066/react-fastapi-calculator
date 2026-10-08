@@ -4,7 +4,6 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
@@ -21,7 +20,7 @@ class Numbers(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "Hello from FastAPI"}
+    return {"message": "Hello from Tanish"}
 
 
 @app.post("/add")
