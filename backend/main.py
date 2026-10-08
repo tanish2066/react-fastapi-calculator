@@ -25,4 +25,4 @@ def home():
 
 @app.post("/add")
 def add(numbers: Numbers):
-    return {"result": numbers.number1 + numbers.number2}
+    return {"result is": numbers.number1 + numbers.number2}
